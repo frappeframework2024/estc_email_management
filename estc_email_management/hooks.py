@@ -118,6 +118,11 @@ app_license = "mit"
 #	"ToDo": "custom_app.overrides.CustomToDo"
 # }
 
+override_doctype_class = {
+    "Notification": "estc_email_management.estc_email_management.notification.CustomNotification"
+}
+
+
 # Document Events
 # ---------------
 # Hook on document methods and events
@@ -162,6 +167,7 @@ app_license = "mit"
 # override_whitelisted_methods = {
 #	"frappe.desk.doctype.event.event.get_events": "estc_email_management.event.get_events"
 # }
+ 
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,

@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-01-08 09:20:26.545281",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "send_date",
+  "email_address",
+  "website_domain",
+  "subject",
+  "first_name",
+  "last_name",
+  "message",
+  "whatapp",
+  "amended_from",
+  "ip_address"
+ ],
+ "fields": [
+  {
+   "fieldname": "website_domain",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Website Domain",
+   "options": "Website Domain",
+   "reqd": 1
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "label": "Subject"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last name"
+  },
+  {
+   "fieldname": "message",
+   "fieldtype": "Long Text",
+   "label": "Message",
+   "reqd": 1
+  },
+  {
+   "fieldname": "whatapp",
+   "fieldtype": "Data",
+   "label": "Whatapp"
+  },
+  {
+   "fieldname": "send_date",
+   "fieldtype": "Datetime",
+   "label": "Send Date"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Email Inquiry",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "ip_address",
+   "fieldtype": "Data",
+   "label": "IP Address"
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email Address",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-01-08 12:06:45.367660",
+ "modified_by": "Administrator",
+ "module": "Estc Email Management",
+ "name": "Email Inquiry",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
