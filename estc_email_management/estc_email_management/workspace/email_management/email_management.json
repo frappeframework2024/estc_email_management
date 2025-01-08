@@ -1,0 +1,78 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"y_sx5NMcF_\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Email Management</span>\",\"col\":12}},{\"id\":\"-nKe2QCo6b\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Website Domain\",\"col\":3}},{\"id\":\"oOtJW78lHV\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Email Account\",\"col\":3}},{\"id\":\"qRWRFly2bZ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Today Email Inquiry\",\"col\":3}},{\"id\":\"-SWhNmKoYp\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Email Sending Rule\",\"col\":3}},{\"id\":\"Kg6JaQa6nV\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Email Queue\",\"col\":3}},{\"id\":\"WC_YWeRqEE\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Send Email Fail\",\"col\":3}}]",
+ "creation": "2025-01-08 10:39:03.508046",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Email Management",
+ "links": [],
+ "modified": "2025-01-08 13:39:37.767441",
+ "modified_by": "Administrator",
+ "module": "Estc Email Management",
+ "name": "Email Management",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 7.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Email Account",
+   "link_to": "Email Account",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Email Queue",
+   "link_to": "Email Queue",
+   "stats_filter": "[[\"Email Queue\",\"status\",\"=\",\"Not Sent\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Send Email Fail",
+   "link_to": "Email Queue",
+   "stats_filter": "[[\"Email Queue\",\"status\",\"=\",\"Error\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Email Sending Rule",
+   "link_to": "Notification",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Website Domain",
+   "link_to": "Website Domain",
+   "stats_filter": "[[\"Website Domain\",\"disabled\",\"=\",0,false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Today Email Inquiry",
+   "link_to": "Email Inquiry",
+   "stats_filter": "[[\"Email Inquiry\",\"send_date\",\"Timespan\",\"today\",false]]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Email Management"
+}
