@@ -225,3 +225,10 @@ override_doctype_class = {
 # auth_hooks = [
 #	"estc_email_management.auth.validate"
 # ]
+
+
+fixtures = [
+    {"dt": "Custom Field"}
+ 
+ 
+]

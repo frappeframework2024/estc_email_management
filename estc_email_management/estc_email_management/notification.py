@@ -42,7 +42,7 @@ class CustomNotification(Notification):
                 communication_type="Automated Message",
                 
             ).get("name")
-
+   
         frappe.sendmail(
             recipients=recipients,
             subject=subject,
@@ -58,3 +58,22 @@ class CustomNotification(Notification):
             communication=communication,
             reply_to=doc.email_address
         )
+        
+        # end auto reply
+       
+        if self.custom_auto_reply_message:
+           
+            auto_reply_message =   frappe.render_template(self.custom_auto_reply_message, context)
+            frappe.sendmail(
+                recipients=[doc.email_address],
+                subject="Auto Reply Message",
+                sender=sender,
+                message=auto_reply_message,
+                reference_doctype=doc.doctype,
+                reference_name=doc.name,
+                expose_recipients="header",
+                communication=communication,
+                reply_to=doc.owner
+            )
+        
+        
